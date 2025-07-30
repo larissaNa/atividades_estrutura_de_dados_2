@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Árvore Binária de Busca</title>
+  <style>
+    body { font-family: Arial; padding: 20px; background: #f0f0f0; }
+    input, button { margin: 5px; }
+    .resultado { margin-top: 20px; white-space: pre-wrap; background: #fff; padding: 10px; border-radius: 5px; }
+  </style>
+</head>
+<body>
+  <h1>Árvore Binária de Busca</h1>
+
+  <input id="valor" placeholder="Valor (número)" type="number" />
+  <button onclick="inserir()">Inserir</button>
+  <button onclick="buscar()">Buscar</button>
+  <button onclick="ancestrais()">Ancestrais</button>
+  <button onclick="descendentes()">Descendentes</button>
+  <button onclick="nivel()">Nível</button>
+
+  <br>
+  <button onclick="largura()">Busca em Largura</button>
+  <button onclick="preOrdem()">Pré-Ordem</button>
+  <button onclick="emOrdem()">Em-Ordem</button>
+  <button onclick="posOrdem()">Pós-Ordem</button>
+
+  <br>
+  <button onclick="altura()">Altura da Árvore</button>
+  <button onclick="quantidade()">Quantidade de Elementos</button>
+  <button onclick="estritamenteBinaria()">É Estritamente Binária?</button>
+  <button onclick="arvoreCheia()">É Cheia?</button>
+
+  <div class="resultado" id="saida2"></div>
+
+  <script src="arvore_binaria.ts"></script>
+</body>
+</html>
