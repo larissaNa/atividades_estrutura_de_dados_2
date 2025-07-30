@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lista Duplamente Encadeada</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+    input, button {
+      margin: 5px;
+    }
+    .resultados {
+      margin-top: 20px;
+      background-color: #eee;
+      padding: 10px;
+      border-radius: 5px;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <h1>Lista Duplamente Encadeada</h1>
+
+  <div>
+    <input id="valor" placeholder="Valor" type="text">
+    <input id="posicao" placeholder="Posição (opcional)" type="number" min="0">
+  </div>
+
+  <div>
+    <button onclick="inserirInicio()">Inserir no Início</button>
+    <button onclick="inserirFim()">Inserir no Fim</button>
+    <button onclick="inserirPosicao()">Inserir na Posição</button>
+  </div>
+
+  <div>
+    <button onclick="removerInicio()">Remover do Início</button>
+    <button onclick="removerFim()">Remover do Fim</button>
+    <button onclick="removerPosicao()">Remover da Posição</button>
+  </div>
+
+  <div>
+    <button onclick="exibirOrdemNormal()">Exibir Ordem Normal</button>
+    <button onclick="exibirOrdemInversa()">Exibir Ordem Inversa</button>
+  </div>
+
+  <div>
+    <button onclick="verificarVazia()">Verificar se está vazia</button>
+    <button onclick="esvaziarLista()">Esvaziar Lista</button>
+    <button onclick="tamanhoLista()">Exibir Tamanho</button>
+  </div>
+
+  <div class="resultados" id="saida"></div>
+
+  <script src="lista_duplamente_encadeada.ts"></script>
+</body>
+</html>
